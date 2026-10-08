@@ -1,0 +1,1263 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Oleo+Script+Swash+Caps:wght@400;700&family=Satisfy&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+									/*nav - section-1*/
+
+.nav
+{
+	width: 100%;
+	height: 100vh;
+	background-image: url(images/bg1img1.jpeg);
+	background-position: center;
+	background-size: 100% 100%;
+}
+
+.nav .navbar
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	padding: 10px;
+	padding-bottom: 10px;
+	gap: 70px;
+}
+
+.navbar .logo
+{
+	border: none;
+	margin-left: -40%;
+}
+
+.menu 
+{
+	display: flex;
+	gap: 32px;
+	padding-left: 100px;
+}
+
+.navbar .menu a
+{
+	text-decoration: none;
+	font-size: 21px;
+	font-family: Poppins,sans-serif;
+	color: white;
+	font-weight: 600;
+}
+
+#home
+{
+	color:rgb(235, 195, 150) ;
+}
+
+.navbar .burger
+{
+	display: none;
+}
+
+.nav .sweet
+{
+	display: flex;
+	flex-direction: column;
+	border: none;
+}
+
+.sweet .delici 
+{
+	display: flex;
+	flex-direction: column;
+	border: none;
+	padding-bottom: 30px;
+	margin-top: 80px;
+	padding-left: 100px;
+}
+
+.delici h4
+{
+	color:rgb(235, 195, 150) ; 
+	font-size: 22px;
+	font-family: Poppins,sans-serif;
+	font-weight: 600;
+}
+
+.delici h3
+{
+	color: white;
+	font-size: 75px;
+	/*font-family:'Lobster Two',static;*/
+	font-family: Cormorant Upright,sans-serif;
+	padding-top: 15px;
+}
+
+.sweet .btn 
+{
+	display: flex;
+	gap: 30px;
+	padding-top: 100px;
+}
+
+.btn .bt1
+{
+	padding:15px 40px;
+	color: white;
+	border: 1px solid rgb(146, 60, 35);
+	border-radius: 5px;
+	background-color:rgb(146, 60, 35) ;
+	font-size: 19px;
+	font-weight: 600;
+	font-family: Poppins,sans-serif;
+}
+
+.btn  .bt2
+{
+	border: none;
+	background: none;
+	color: white;
+	font-size: 22px;
+	font-weight: 600;
+	font-family: Poppins,sans-serif;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+											/*nav - section-1  ---- media query*/
+	@media (max-width: 992px)
+	{
+		.nav 
+		{
+			width:100%;
+			height: fit-content;
+			background-position: center;
+			background-size:100% 100%;
+			background-repeat: no-repeat;
+		}
+		.nav .navbar
+		{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.navbar .logo
+		{
+			margin-left: 80px;
+		}
+
+		.menu 
+		{
+			display: none;
+		}
+
+		.navbar .burger
+		{
+			display: block;
+			font-size: 34px;
+			color: white;
+			padding-right: 70px;		
+		}
+	}
+
+/*---------------------------------------------------------------------------------------------------------*/
+													/*nav - section-1  ---- media query*/
+	@media (max-width: 768px)
+	{
+		.nav 
+		{
+			width:100%;
+			height: fit-content;
+			background-position: center;
+			background-size:100% 100%;
+			background-repeat: no-repeat;
+		}
+
+		.navbar .logo
+		{
+			margin-left: 30px;
+			font-size:0px;
+		}
+
+		.navbar .burger
+		{
+			display: block;
+			font-size: 28px;
+			padding-right: 20px;
+				
+		}
+
+		.delici h4
+		{
+			font-size:14px;
+		}
+
+		.delici h3
+		{
+			font-size: 50px;
+		}
+
+		.btn .bt1
+		{
+			padding:10px 20px;	
+			font-size: 10px;		
+		}
+
+		.btn  .bt2
+		{
+			font-size: 15px;
+		}
+
+		.sweet .delici 
+		{
+			padding-left: 50px;
+		}
+
+
+	}
+/*==========================================================================================================*/
+										/*top - section - 2*/
+.top
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 50px;
+	padding-bottom: 8%;
+}
+
+.top .product h2
+{
+	margin-top: 80px;
+	font-size: 4rem;
+	font-weight: ;
+	font-family:'Lobster Two',static;
+}
+
+.top .cards
+{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+	margin-top: 30px;
+}
+
+#cds img
+{
+	 width: 200px;
+	 height: 200px;
+}
+
+.cds
+{
+	border: 1px solid;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	gap: 30px;
+	padding: 10px 10px;
+	background-color: rgb(21, 21, 21);
+	 
+}
+
+.price 
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 22px;
+	font-family: 'Cormorant Uprigh';
+	border: none;
+	align-self: stretch;
+	color: white;
+}
+
+.grain
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+ 	font-size: 21px;
+	font-family: 'Cormorant Uprigh';
+	border: none;
+	align-self: stretch;
+	color: white;	
+}
+
+.sp1
+{
+	
+	border: none;
+	margin-left: 15px;
+}
+
+.sp2
+{
+	padding: 2px 10px;
+	border: none;
+	border-radius: 15px;
+	margin-right: 50px;
+	background-color: rgb(144, 61, 36);
+}
+
+.grain .whole
+{
+	
+	border: none;
+	margin-left: 15px;
+}
+
+.grain .add
+{
+	border: none;
+	padding: 10px 25px;
+	margin-right: 20px;	
+	background-color: rgb(144, 61, 36);
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+												/*top - section - 2 --- media query*/
+	@media (max-width: 992px)
+	{
+		.top
+		{
+			padding-bottom: 8%;	
+		}
+
+		.top .product h2
+		{
+			margin-top: 50px;
+			font-size: 4rem;
+		}
+
+		.top .cards
+		{
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			margin-top: 20px;
+		}
+
+	}
+
+/*--------------------------------------------------------------------------------------*/
+											/*top - section - 2  ---- media query*/
+	@media (max-width: 768px)
+	{
+		
+		.top .product h2
+		{
+			font-size: 2.5rem;
+			margin-top: 30px;
+		}
+
+		.top .cards
+		{
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			margin-top: 10px;
+		}
+
+		.cds img
+		{
+			width: 100%;
+			height: 130px;
+		}
+
+		.cds
+		{
+			padding: 20px 60px;
+		}
+
+		.price
+		{
+			font-size:16px;
+		} 
+
+		.grain
+		{
+			font-size: 15px;
+		}
+
+		.sp1
+		{
+			margin-left: -40px;
+		}
+
+		.sp2
+		{
+			padding: 4px 10px;
+			margin-right: -20px;
+		}
+
+		.grain .whole
+		{
+			margin-left: -40px;
+		}
+
+		.grain .add
+		{
+			padding: 5px 15px;
+			margin-right: -40px;
+		}
+	}
+
+/*========================================================================================================*/
+										 /*order - section - 3*/
+.order                                           
+{
+	width: 100%;
+	height:70vh;
+	background-image: url(images/bg2img2.jpeg);
+	background-position: center;
+	background-size: 100% 100%;	
+	background-repeat: no-repeat;
+}
+
+.order .or-of
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 40px;
+	padding-top: 3%;
+}
+
+.or-of .offer h4
+{
+	font-size: 3.3rem;
+	font-weight: 600;
+	font-family:'Lobster Two',static;
+	color:rgb(144, 61, 36) ;
+}
+
+.or-of .offer span
+{
+	padding-left: 10px;
+}
+
+.or-of .suspen
+{
+	font-size: 23px;
+	font-weight: 500;
+	color: rgb(100, 100, 70);
+	font-family:  "Poppins", sans-serif;
+}
+
+.or-of .suspen span
+{
+	padding-left: 33%;
+}
+
+.or-of .btn2 button
+{
+	font-size: 17px;
+	font-family:  "Poppins", sans-serif;
+	padding: 15px 30px;
+	border-radius:5px;
+	background-color:rgb(144, 61, 36) ;
+	color: white;
+	border: none;
+}
+
+/*--------------------------------------------------------------------------------------*/
+										/*order - section - 3 ---- media query*/
+	@media (max-width: 992px)
+	{
+		.order
+		{
+			width: 100%;
+			height: fit-content;
+		}
+
+		.or-of .btn2 button
+		{
+			font-size: 15px;
+			padding: 10px 25px;
+			margin-bottom: 10px;
+		}
+
+		.or-of .offer h4
+		{
+			font-size: 3rem;
+		}
+
+		.or-of .suspen
+		{
+			font-size: 19px;
+		}
+	}
+
+/*-------------------------------------------------------------------------------------------*/
+										/*order - section - 3 ---- media query*/
+	@media (max-width: 768px)
+	{
+		.order
+		{
+			width: 100%;
+			height: fit-content;
+		}
+
+		.order .or-of
+		{
+			gap: 30px;
+			padding-top: 3%;
+		}
+
+		.or-of .offer h4
+		{
+			font-size: 1.6rem;
+		}
+
+		.or-of .suspen
+		{
+			font-size: 15px;
+		}
+
+		.or-of .btn2 button
+		{
+			font-size: 10px;
+			padding: 10px 20px;
+			margin-bottom: 10px;
+		}
+	}
+
+/*==================================================================================================*/
+										 /*Explore -- section -- 4*/
+.explore
+{
+	width: 100%;
+	padding-bottom: 5%;
+}
+
+.more
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.more .ex-mo h4
+{
+	margin-top: 60px;
+	font-size: 4.5rem;
+	color:rgb(44, 44, 44);
+	font-family:'Lobster Two',static;
+}
+
+.cake-vareity
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 70px;
+	margin-top: 5%;
+}
+
+.cake-vareity span
+{
+	font-size: 20px;
+	font-family:"Poppins", sans-serif; ;
+	font-weight:600 ;
+	color: rgb(114, 114, 114);
+}
+
+.cake-vareity > :first-child 
+{
+	text-decoration: underline;
+	text-decoration-color: blue;
+	text-decoration-thickness: 3px;
+	
+}
+
+.more .cakes
+{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 35px;
+	margin-top: 5%;
+}
+
+.cakes img
+{
+	width: 350px;
+	height: 350px;
+	border-radius: 5px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+											 /*Explore -- section -- 4 --- media query*/
+	@media (max-width: 992px)
+	{
+		.explore
+		{
+			width: 100%;
+			height: 60vh;
+			padding-bottom: 1%;
+		}
+
+		.more .ex-mo h4
+		{
+			margin-top: 40px;
+			font-size: 3rem;
+		}
+
+		.more .cakes
+		{
+			gap: 20px;
+		}
+
+		.cakes img
+		{
+			width: 250px;
+			height: 250px;
+		}
+
+		.cake-vareity span
+		{
+			font-size: 17px;
+		}
+	}
+/*-----------------------------------------------------------------------------------------*/
+											 /*Explore -- section -- 4 --- media query*/
+	@media (max-width: 768px)
+	{
+		.explore
+		{
+			width: 100%;
+			min-height: 100vh;
+			height: auto;
+			padding-bottom: 5%;
+		}
+
+		.more .ex-mo h4
+		{
+			margin-top: 30px;
+			font-size: 2.5rem;
+		}
+
+		.cakes img
+		{
+			width: 100%;
+			height: 167px;
+		}
+
+		.cake-vareity 
+		{
+			gap: 20px;
+			margin-top: 5%;
+		}
+
+		.cake-vareity span
+		{
+			font-size: 12px;
+		}
+
+		.more .cakes
+		{
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+/*============================================================================================*/
+												/*about --- section -- 5*/
+.about                                          
+{
+	width: 100%;
+	height:70vh;
+	background-image: url(images/bg3img3.jpeg);
+	background-position: center;
+	background-size: 100% 100%;	
+	background-repeat: no-repeat;
+}
+
+.about .abo-us
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 40px;
+	padding-top: 5%;
+}
+
+.abo-us .us h4
+{
+	font-size: 3.5rem;
+	font-weight: 600;
+	font-family:'Lobster Two',static;
+	color:white;
+}
+
+.abo-us .sus
+{
+	font-size: 23px;
+	font-weight: 500;
+	color: rgb(187, 185, 188);
+	font-family:  "Poppins", sans-serif;
+}
+
+.abo-us .sus span
+{
+	padding-left: 33%;
+}
+
+.abo-us .btn3 button
+{
+	font-size: 17px;
+	font-family:  "Poppins", sans-serif;
+	padding: 15px 35px;
+	border-radius:5px;
+	background-color:rgb(144, 61, 36) ;
+	color: white;
+	border: none;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+											/*about --- section -- 5 --- media query*/
+	@media (max-width: 992px)
+	{
+		.about
+		{
+			width: 100%;
+			height: fit-content;
+			padding-bottom: 70px;
+			margin-top: -20px;
+		}
+
+		.abo-us .btn3 button
+		{
+			font-size: 15px;
+			padding: 10px 25px;
+			margin-bottom: 10px;
+		}
+
+		.abo-us .us h4
+		{
+			font-size: 3rem;
+		}
+
+		.abo-us .sus
+		{
+			font-size: 19px;
+		}
+	}
+
+/*-------------------------------------------------------------------------------------------*/
+										/*about --- section -- 5 ---- media query*/
+	@media (max-width: 768px)
+	{
+		.about
+		{
+			width: 100%;
+			height: fit-content;
+			padding-bottom: 50px;
+			margin-top: 20px;
+		}
+
+		.about .abo-us
+		{
+			gap: 30px;
+			padding-top: 3%;
+		}
+
+		.abo-us .us h4
+		{
+			font-size: 1.7rem;
+		}
+
+		.abo-us .sus
+		{
+			font-size: 13px;
+		}
+
+		.abo-us .btn3 button
+		{
+			font-size: 9px;
+		}
+	}
+/*=============================================================================================*/
+												/*featured --- section --- 6 */
+.feature
+{
+	width: 100%;
+}	
+
+.treats
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-bottom: 30px;
+	width: 100%;
+}
+
+.treats .fea-trea h4
+{
+	margin-top: 60px;
+	font-size: 4.5rem;
+	color:rgb(44, 44, 44);
+	font-family:'Lobster Two',static;
+}
+
+.treats .puf-price
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 35px;
+	margin-top: 5%;
+}
+
+.puf-price .past img
+{
+	width: 350px;
+	height: 350px;
+	border-radius: 8px;
+}
+
+.past .dollor
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.dollor span
+{
+	font-size: 29px;
+	font-weight: 600;
+	font-family: Inter;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+											/*featured --- section --- 6 --- media query */
+	@media (max-width: 992px)
+	{
+		.feature
+		{
+			width: 100%;
+			max-height: 100vh;
+		}	
+		.treats
+		{	
+			width: 100%;
+			padding-bottom: 5px;
+		}
+
+		.treats .fea-trea h4
+		{
+			font-size: 4rem;
+		}
+
+		.treats .puf-price
+		{
+			display: grid;
+			grid-template-columns: repeat(2, 260px);
+			justify-content: center;
+			width: 100%;
+			gap: 80px;		
+		}
+
+		.puf-price .browni
+		{
+			grid-column: 1/3;
+			justify-self: center;
+		}
+
+		.puf-price .past img
+		{
+			width: 300px;
+			height: 250px;
+		}
+
+		.past .dollor
+		{
+			margin-top: 20px;
+		}
+
+		.dollor span
+		{
+			font-size: 25px;
+		}
+
+	}
+/*--------------------------------------------------------------------------------------------------*/
+												/*featured --- section --- 6 --- media query */
+	@media (max-width: 768px)
+	{
+		.treats
+		{
+			height: auto;
+		}
+
+		.treats .fea-trea h4
+		{
+			margin-top: 30px;
+			font-size: 2.1rem;
+		}
+
+		.treats .puf-price
+		{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			margin-top: 11%;
+		}
+
+		.treats .puf-price .puf-past
+		{
+			width: 50%;
+		}
+
+		.puf-price .past img
+		{
+			width: 100%;
+			height: 170px;
+		}
+
+		.past .dollor
+		{
+			margin-top: 10px;
+		}
+
+		.dollor span
+		{
+			font-size: 13px;
+		}
+	}
+/*===========================================================================================================*/
+												/*follow -- section --- 7*/
+.follow
+{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border: 1px solid;
+	padding-bottom: 50px;
+	background-color: rgb(41, 41, 41);
+}
+
+.follow .follow-us
+{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 50px;
+	
+}
+
+.modrino img
+{
+	font-size: 10rem;
+}
+
+.follow-us .media
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	font-size: 22px;
+	font-family: Inter;
+}
+
+.media img
+{
+	height: 10%;
+	width: 10%;
+}
+
+.media h4
+{
+	color:rgb(234, 190, 138);
+}
+
+.detail 
+{
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	margin-top: 40px;
+	border: none;
+	width: 67%;
+	padding-bottom: 20px;
+}
+
+.detail .deta 
+{
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+}
+
+.detail .deta  h4
+{
+	font-size: 29px;
+	color:rgb(234, 190, 138);
+	font-family: Inter;
+}
+
+.detail .deta  span
+{
+	font-size: 18px;
+	color: white;
+	font-family: Inter;
+}
+
+.abt h4,
+.abt span,
+.exp h4,
+.exp span
+{
+	margin-right: auto;
+}
+
+.recent 
+{
+	margin-right: 50px;
+}
+
+.recent h4
+{
+	margin-right: auto;
+}
+
+.recent .pastry
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+
+.pastry img
+{
+	width: 26%; 
+	height: 20%;
+}
+
+.pastry .une
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	gap: 10px;
+	margin-right: auto;
+}
+
+.pastry .une .unes 
+{
+	font-size:15px;
+	font-weight: 400;
+	margin-right: auto;
+	color: rgb(228, 187, 140);	
+}
+
+.follow .house
+{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	margin-right: 9%;
+	word-spacing: 5px;
+	font-size: 19px;
+	color: white;
+	font-family: Inter;
+}
+/*-----------------------------------------------------------------------------------------------*/
+												/*follow -- section --- 7 --- media query*/
+	@media (max-width: 992px)
+	{
+		.footer 
+		{
+			height: 93vh;
+			margin-top: 30px;
+			width: 100%;
+		}
+
+		.follow
+		{
+			width: 100%;
+		}
+
+		.follow-us .media
+		{
+			font-size: 20px;
+		}
+
+		.media img
+		{
+			height: 7%;
+			width: 7%;
+		}
+
+		.detail 
+		{
+			margin-left: 9%;
+			width: 80%;
+		}
+
+		.detail .deta  h4
+		{
+			font-size: 20px;
+		}
+
+		.detail .deta  span
+		{
+			font-size: 18px;
+		}
+
+		.pastry
+		{
+			text-wrap: nowrap;
+		}
+
+		.pastry .une .unes
+		{
+			font-size: 13px;
+		}
+
+		.pastry img
+		{
+			width:28%;
+			height: 24%;
+			border: none;
+		}
+
+		.follow .house
+		{
+			margin-right: 6%;
+			font-size: 17px;
+		}
+
+	}
+/*----------------------------------------------------------------------------------------------*/
+											/*follow -- section --- 7 --- media query*/
+	@media (max-width: 768px)
+	{
+		.footer 
+		{
+			height: 95vh;
+			margin-top: 30px;
+			width: 100%;
+		}
+
+		.follow
+		{
+			width: 100%;
+		}
+
+		.follow .follow-us
+		{
+			width: 90%;
+		}
+
+		.modrino img
+		{
+			width: 80%;
+			height: 80%;
+		}
+
+		.follow-us .media
+		{
+			font-size: 10px;
+			gap: 15px;
+			font-size: 14px;
+			padding-left: 20px;
+		}
+
+		.media img
+		{
+			height: 7%;
+			width: 7%;
+		}
+
+		.detail
+		{
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);	
+			gap: 30px;
+			width: 90%;
+		}
+
+		.detail .deta 
+		{
+		    width: 100%;
+            min-width: 0;
+            align-items: flex-start;
+		}
+
+		.detail .recent 
+		{
+			grid-column: 1/3;
+			margin-top: 20px;
+            min-width: 0;
+		}
+
+		.recent .news
+		{
+			padding-right:10px ;
+		}
+
+		.detail .deta  h4
+		{
+			font-size: 13px;
+		}
+
+		.detail .deta  span
+		{
+			font-size: 12px;
+		}
+
+		.pastry
+		{
+			gap: 20px;
+		}
+
+		.pastry img
+		{
+			width:13%;
+			height:20%; 
+		}
+
+		.pastry .une .unes 
+		{
+			font-size:9px;
+		}
+
+		.follow .house
+		{
+			margin-right: 1%;
+			font-size: 12px;
+			margin-top: 20px;
+			width: 90%;
+		}
+
+	}
+
+/*===================================================================================================*/
+
+
+
+
+
+
+
+
+
