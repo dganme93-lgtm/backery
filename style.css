@@ -1165,7 +1165,8 @@
 			height: auto;
 		    min-height: 0;
 		    overflow: visible;
-			 margin-top: 40px;
+			margin-top: 40px;
+			padding-top: 40px;
 		}
 
 		.follow .follow-us
